@@ -317,7 +317,7 @@ This task assumes you have:
 
 2. Extract the Search and Insight Engine distribution.
 
-    By default, the contents of `alfresco-insight-engine-1.4.x.zip` are decompressed in a root folder as `/alfresco-search-services`. See [Search and Insight Engine directory structure](See [Search and Insight Engine directory structure](/docs/insight-engine/latest/config/) for more information.#search-and-search-services-directory-structure) for more details.
+    By default, the contents of `alfresco-insight-engine-1.4.x.zip` are decompressed in a root folder as `/alfresco-search-services`. See [Search and Insight Engine directory structure](insight-engine/1.4/config/index.md) for more details.
 
 3. Configure HTTP.
 
