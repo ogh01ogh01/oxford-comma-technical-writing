@@ -6,11 +6,11 @@ Use this information to quickly start up Content Services using Docker Compose.
 
 > **Note:** While Docker Compose is often used for production deployments, the Docker Compose file provided is recommended for development and test environments only. Customers are expected to adapt this file to their own requirements, if they intend to use Docker Compose to deploy a production environment.
 
-To deploy Content Services using Docker Compose, download and install [Docker](https://docs.docker.com/install/){:target="_blank"}, then follow the steps below. Make sure that you've reviewed the [prerequisites]({% link content-services/latest/install/containers/index.md %}#prerequisites) before continuing.
+To deploy Content Services using Docker Compose, download and install [Docker](https://docs.docker.com/install/){:target="_blank"}, then follow the steps below. Make sure that you've reviewed the [prerequisites](https://docs.hyland.com/p/alfresco) before continuing.
 
 1. Download the `docker-compose.yml` file by accessing the Content Services [Download Trial](https://www.hyland.com/en/resources/alfresco-ecm-download){:target="_blank"} page, which will give you a 30-day license.
 
-    If you already have a valid license file for Content Services 23.1, you can apply it directly to the running system. See [Uploading a new license]({% link content-services/latest/admin/license.md %}) for more details.
+    If you already have a valid license file for Content Services 23.1, you can apply it directly to the running system. See [Uploading a new license](https://docs.hyland.com/p/alfresco)for more details.
 
     > **Note:** Make sure that exposed ports are open on your host computer. Check the `docker-compose.yml` file to determine the exposed ports - refer to the `host:container` port definitions. You'll see they include 5432, 8080, 8083 and others.
 
@@ -105,7 +105,7 @@ For Safari:
 For Chrome, FireFox, Opera, and Edge:
 
 1. Install the ModHeader extension.
-2. Add the `X-Alfresco-Search-Secret` header with the secret value, as seen in the image. <br/><br/>![Modheader]({% link content-services/images/modheader.png %}){:width="460" height="380px"}
+2. Add the `X-Alfresco-Search-Secret` header with the secret value, as seen in the image. <br/><br/>
 
 ## Check system start up
 
@@ -285,11 +285,10 @@ See the [Alfresco/acs-deployment](https://github.com/Alfresco/acs-deployment){:t
 
 * In this project, you'll find several Docker Compose files. The default `docker-compose.yml` file contains the latest work-in-progress deployment scripts, and installs the latest *development* version of Content Services.
 * To deploy a specific released version of Content Services, several *major.minor* Docker Compose files are provided in the `docker-compose` folder of the project.
-* To modify your development environment, for example to change or mount files in the existing images, you'll have to create new custom Docker images (recommended approach). The same approach applies if you want to install AMP files into the repository and Share images. See the [Customization guidelines]({% link content-services/latest/install/containers/customize.md %}) for more.
+* To modify your development environment, for example to change or mount files in the existing images, you'll have to create new custom Docker images (recommended approach). The same approach applies if you want to install AMP files into the repository and Share images. See the [Customization guidelines](https://docs.hyland.com/p/alfresco) for more.
 
 Using one of the Docker Compose - Enterprise files in this project deploys the following system:
 
-![Docker Compose - Enterprise]({% link content-services/images/compose-enterprise.png %}){:width="460" height="380px"}
 
 ## Configure
 
@@ -466,7 +465,7 @@ This app is deployed by default only with the Community Compose file, `community
 
 | Property | Description |
 | -------- | ----------- |
-| JAVA_OPTS | A set of properties that are picked up by the JVM inside the container. Any Sync Service property can be passed to the container using the following format `-Dproperty=value` (for example, `-Dsql.db.username=alfresco`). <br><br>For a complete list of properties that can be passed through `JAVA_OPTS` environment variable, check Alfresco Sync Service [configuration]({% link sync-service/latest/config/index.md %}) |
+| JAVA_OPTS | A set of properties that are picked up by the JVM inside the container. Any Sync Service property can be passed to the container using the following format `-Dproperty=value` (for example, `-Dsql.db.username=alfresco`). <br><br>For a complete list of properties that can be passed through `JAVA_OPTS` environment variable, check Alfresco Sync Service [configuration](https://docs.hyland.com/p/alfresco) |
 
 ### Alfresco Proxy (proxy)
 
@@ -483,7 +482,7 @@ This app is deployed by default only with the Community Compose file, `community
 
 ## Customize
 
-To customize the Docker Compose deployment, for example applying AMPs, we recommend following the best practice of creating your own custom Docker image(s). The [Customization guidelines]({% link content-services/latest/install/containers/customize.md %}) walks you through this process.
+To customize the Docker Compose deployment, for example applying AMPs, we recommend following the best practice of creating your own custom Docker image(s). The [Customization guidelines](https://docs.hyland.com/p/alfresco) walks you through this process.
 
 ## Cleanup
 
@@ -533,7 +532,6 @@ When using [Docker with Windows Subsystem for Linux (WSL) 2 Backend](https://doc
 > Docker Engine on the **Resources** tab in Docker Desktop's preferences pane as shown in the screenshot below. This
 > is required because insufficient memory will cause containers to exit without warning.
 
-![Docker Desktop Resources]({% link content-services/images/docker-desktop-resources.png %})
 
 ## Reference
 

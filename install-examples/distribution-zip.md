@@ -358,7 +358,7 @@ This task assumes you have:
 
     > **Note:** The spell check functionality works with Search and Insight Engine when suggestion is enabled.
 
-6. (Optional) If you want to install Search and Insight Engine on a separate machine, set the `SOLR_SOLR_HOST` and `SOLR_ALFRESCO_HOST` environment variables before starting Search and Insight Engine, for more see [Configuring Search and Insight Engine]({% link search-services/latest/config/index.md %}#search-services-externalized-configuration).
+6. (Optional) If you want to install Search and Insight Engine on a separate machine, set the `SOLR_SOLR_HOST` and `SOLR_ALFRESCO_HOST` environment variables before starting Search and Insight Engine, for more see [Configuring Search and Insight Engine](https://docs.hyland.com/p/alfresco).
 
     (Windows) update the `alfresco-search-services`/`solr.in.cmd` file:
 
@@ -457,7 +457,7 @@ Use this information to start up Alfresco Content Services 6.0 or above and Sear
                 - 8083:8983 #Browser port
     ```
 
-    > **Note:** If you want to use the Apache Zeppelin visualization interface with Search and Insight Engine you have to deploy it using Docker Compose along with Alfresco Content Services, you cannot install it manually. See [Building Reports and Dashboards]({% link insight-engine/1.4/using/index.md %}#Install with Docker Compose) for the additional container information you need to add to your `docker-compose.yml` file.
+    > **Note:** If you want to use the Apache Zeppelin visualization interface with Search and Insight Engine you have to deploy it using Docker Compose along with Alfresco Content Services, you cannot install it manually. See [Building Reports and Dashboards](https://docs.hyland.com/p/alfresco) for the additional container information you need to add to your `docker-compose.yml` file.
 
 4. Save the file.
 
