@@ -27,7 +27,7 @@ This task assumes you have:
 
 2. Extract the Search and Insight Engine distribution.
 
-    By default, the contents of `alfresco-insight-engine-1.4.x.zip` are decompressed in a root folder as `/alfresco-insight-engine`. See [Search and Insight Engine directory structure]({% link insight-engine/1.4/config/index.md %}#search-and-insight-engine-directory-structure) for more details.
+    By default, the contents of `alfresco-insight-engine-1.4.x.zip` are decompressed in a root folder as `/alfresco-insight-engine`. See [Search and Insight Engine directory structure](insight-engine/1.4/config/index.md#search-and-insight-engine-directory-structure) for more details.
 
 3. If you use several languages across your organization, you **must** enable cross-language search support in all fields. To do this update the `alfresco-insight-engine/solrhome/conf/shared.properties` file:
 
@@ -94,7 +94,7 @@ This task assumes you have:
         SOLR_PORT=8983
         ```
 
-6. (Optional) If you want to install Search and Insight Engine on a separate machine, set the `SOLR_SOLR_HOST` and `SOLR_ALFRESCO_HOST` environment variables before starting Search and Insight Engine, for more see [Configuring Search and Insight Engine]({% link insight-engine/1.4/config/index.md %}#search-and-insight-engine-externalized-configuration).
+6. (Optional) If you want to install Search and Insight Engine on a separate machine, set the `SOLR_SOLR_HOST` and `SOLR_ALFRESCO_HOST` environment variables before starting Search and Insight Engine, for more see [Configuring Search and Insight Engine](insight-engine/1.4/config/index.md#search-and-insight-engine-externalized-configuration).
 
     (Windows) update the `alfresco-insight-engine/solr.in.cmd` file:
 
@@ -176,7 +176,7 @@ If you are not using sharded Search and Insight Engine:
 
 Use this information to install Search and Insight Engine on the same machine as Alfresco Content Services without mutual TLS using plain HTTP.
 
-Mutual TLS is used for authentication between the Repository and Search and Insight Engine. Without mutual TLS, internal APIs on both sides will be exposed without any form of authentication, giving full access to the repository data. In such a setup, you need to make sure that external access to these APIs is blocked, for example, with a front-end reverse proxy. See [Adding a reverse proxy in front of Content Services]({% link content-services/latest/install/zip/tomcat.md %}#adding-a-reverse-proxy-in-front-of-content-services) for more.
+Mutual TLS is used for authentication between the Repository and Search and Insight Engine. Without mutual TLS, internal APIs on both sides will be exposed without any form of authentication, giving full access to the repository data. In such a setup, you need to make sure that external access to these APIs is blocked, for example, with a front-end reverse proxy. See [Adding a reverse proxy in front of Content Services](content-services/latest/install/zip/tomcat.md#adding-a-reverse-proxy-in-front-of-content-services) for more.
 
 This task assumes you have:
 
@@ -195,7 +195,7 @@ This task assumes you have:
 
 2. Extract the Search and Insight Engine distribution.
 
-    By default, the contents of `alfresco-insight-engine-1.4.x.zip` are decompressed in a root folder as `/alfresco-insight-engine`. See [Search and Insight Engine directory structure]({% link insight-engine/1.4/config/index.md %}#search-and-insight-engine-directory-structure) for more details.
+    By default, the contents of `alfresco-insight-engine-1.4.x.zip` are decompressed in a root folder as `/alfresco-insight-engine`. See [Search and Insight Engine directory structure](insight-engine/1.4/config/index.md#search-and-insight-engine-directory-structure) for more details.
 
 3. Configure HTTP.
 
@@ -215,7 +215,7 @@ This task assumes you have:
         -Dalfresco.secureComms=none
         ```
 
-    See [Setting up Solr sharding]({% link insight-engine/1.4/config/sharding/create.md %}#core-templates) for a brief description of the out-of-the-box Solr core templates.
+    See [Setting up Solr sharding](insight-engine/1.4/config/sharding/create.md#core-templates) for a brief description of the out-of-the-box Solr core templates.
 
 4. If you use several languages across your organization, you **must** enable cross-language search support in all fields. To do this add the following to the `alfresco-insight-engine/solrhome/conf/shared.properties` file:
 
@@ -236,7 +236,7 @@ This task assumes you have:
 
     > **Note:** The spell check functionality works with Search and Insight Engine when suggestion is enabled.
 
-6. (Optional) If you want to install Search and Insight Engine on a separate machine, set the `SOLR_SOLR_HOST` and `SOLR_ALFRESCO_HOST` environment variables before starting Search and Insight Engine, for more see [Configuring Search and Insight Engine]({% link insight-engine/1.4/config/index.md %}#search-and-insight-engine-externalized-configuration).
+6. (Optional) If you want to install Search and Insight Engine on a separate machine, set the `SOLR_SOLR_HOST` and `SOLR_ALFRESCO_HOST` environment variables before starting Search and Insight Engine, for more see [Configuring Search and Insight Engine](insight-engine/1.4/config/index.md#search-and-insight-engine-externalized-configuration).
 
     (Windows) update the `alfresco-insight-engine`/`solr.in.cmd` file:
 
