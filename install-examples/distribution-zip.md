@@ -50,7 +50,7 @@ This task assumes you have:
 
 5. To secure access to Search and Insight Engine, you must create a new set of keystores and keys.
 
-    1. Generate secure keys specific to your Alfresco installation. For more information, see [Secure keys]({% link insight-engine/1.4/config/keys.md %}#generate-secure-keys-for-ssl-communication).
+    1. Generate secure keys specific to your Alfresco installation. For more information, see ([Secure keys](https://community.hyland.com)).
 
     2. Create a new keystore directory at `alfresco-insight-engine/solrhome`.
 
